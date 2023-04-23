@@ -25,31 +25,49 @@ body {
   border-radius: 10px;
   width: 110px;
   height: 110px;
-  transform: rotate(45deg);
   position: absolute;
   transition: transform 0.8s;
   transform-style: preserve-3d;
-}
-.square:hover, .square2:hover, .square1:hover {
-  transform: rotate(180deg);
+  top: 50%;
+  transform: translate(50%, 50%);
 }
 
 .square1 {
-  left: 90px;
+  left: 40%;
+  animation: square1-animation 1s ease-in-out forwards;
 }
 
 .square2 {
   background: white;
   border: 20px solid white;
-  left: 170px;
   box-shadow: -10px 10px 20px rgba(0, 0, 0, 0.274);
+  left: 60%;
+  text-align: center;
+  animation: square2-animation 1s ease-in-out forwards;
 }
 
+@keyframes square1-animation {
+  from {
+    transform: translate(-150%, -50%);
+  }
+  to {
+    transform: translate(-50%, -50%) rotate(45deg);
+  }
+}
+@keyframes square2-animation {
+  from {
+    transform: translate(50%, -50%);
+  }
+  to {
+    transform: translate(-50%, -50%) rotate(135deg);
+  }
+}
 .flor {
   text-decoration: none;
+  transform: rotate(225deg);
   color: white;
+  width: 100%;
 }
 .flor:hover {
   color: black;
-  transform: rotate(180deg);
 }/*# sourceMappingURL=main.css.map */
