@@ -62,12 +62,14 @@ body {
     transform: translate(-50%, -50%) rotate(135deg);
   }
 }
-.flor {
+.anchor {
   text-decoration: none;
-  transform: rotate(225deg);
   color: white;
-  width: 100%;
 }
-.flor:hover {
+.anchor:hover {
   color: black;
+}
+
+.action {
+  transform: rotate(225deg);
 }/*# sourceMappingURL=main.css.map */

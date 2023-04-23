@@ -68,13 +68,14 @@ body{
 }
 
 
-
-.flor{
+.anchor{
   text-decoration: none;
-  transform: rotate(225deg);
   color:white;
-  width: 100%;
   &:hover{
     color:black;
   }
+}
+
+.action{
+  transform: rotate(225deg);
 }
